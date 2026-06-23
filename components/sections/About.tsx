@@ -50,8 +50,8 @@ export function About() {
               <Reveal delay={0.12}>
                 <p>
                   S-Tier was built on a simple obsession: every cut should feel
-                  like it was made for one person. No templates, no shortcuts —
-                  just precision, patience, and a sharp eye for detail honed over
+                  like it was made for one person. No templates, no shortcuts.
+                  Just precision, patience, and a sharp eye for detail honed over
                   years behind the chair.
                 </p>
               </Reveal>
@@ -59,15 +59,15 @@ export function About() {
                 <p>
                   Grooming here is treated as a craft and a form of
                   self-expression. From the first consultation to the final
-                  line-up, the goal is the same: a clean, modern look that feels
-                  unmistakably yours — and a chair you actually look forward to
+                  lineup, the goal is the same: a clean, modern look that feels
+                  unmistakably yours, and a chair you actually look forward to
                   sitting in.
                 </p>
               </Reveal>
               <Reveal delay={0.24}>
                 <p>
                   More than a haircut, it&apos;s a relationship. Regulars come for
-                  the fade and stay for the experience — the conversation, the
+                  the fade and stay for the experience: the conversation, the
                   consistency, and the community built one client at a time in{" "}
                   {site.location.region}.
                 </p>
