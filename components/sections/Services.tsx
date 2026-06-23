@@ -64,33 +64,40 @@ export function Services() {
                     variants={staggerItem}
                     whileHover={{ y: -6 }}
                     transition={{ type: "spring", stiffness: 300, damping: 24 }}
-                    className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/[0.06] bg-surface/60 p-7 transition-colors duration-300 hover:border-white/20"
                   >
-                    <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                      <div className="absolute -inset-px rounded-2xl bg-gradient-to-b from-white/[0.08] to-transparent" />
-                    </div>
+                    <a
+                      href={site.booksyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Book ${service.name} on Booksy`}
+                      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.06] bg-surface/60 p-7 transition-colors duration-300 hover:border-white/20"
+                    >
+                      <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <div className="absolute -inset-px rounded-2xl bg-gradient-to-b from-white/[0.08] to-transparent" />
+                      </div>
 
-                    <div className="relative flex items-start justify-between gap-4">
-                      <h4 className="font-display text-xl font-semibold text-foreground">
-                        {service.name}
-                      </h4>
-                      <span className="whitespace-nowrap rounded-full border border-white/10 px-3 py-1 text-xs text-muted">
-                        {service.duration}
-                      </span>
-                    </div>
+                      <div className="relative flex items-start justify-between gap-4">
+                        <h4 className="font-display text-xl font-semibold text-foreground">
+                          {service.name}
+                        </h4>
+                        <span className="whitespace-nowrap rounded-full border border-white/10 px-3 py-1 text-xs text-muted">
+                          {service.duration}
+                        </span>
+                      </div>
 
-                    <p className="relative mt-4 flex-1 text-sm leading-relaxed text-muted">
-                      {service.description}
-                    </p>
+                      <p className="relative mt-4 flex-1 text-sm leading-relaxed text-muted">
+                        {service.description}
+                      </p>
 
-                    <div className="relative mt-7 flex items-end justify-between border-t border-white/[0.06] pt-5">
-                      <span className="font-display text-2xl font-semibold text-foreground">
-                        {service.price}
-                      </span>
-                      <span className="text-xs uppercase tracking-widest text-accent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Book &rarr;
-                      </span>
-                    </div>
+                      <div className="relative mt-7 flex items-end justify-between border-t border-white/[0.06] pt-5">
+                        <span className="font-display text-2xl font-semibold text-foreground">
+                          {service.price}
+                        </span>
+                        <span className="text-xs uppercase tracking-widest text-accent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                          Book &rarr;
+                        </span>
+                      </div>
+                    </a>
                   </motion.li>
                 ))}
               </motion.ul>

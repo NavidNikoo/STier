@@ -17,8 +17,8 @@ export const site = {
     region: "Tustin, California",
     short: "Tustin, CA",
   },
-  // Replace with the real Booksy page URL.
-  booksyUrl: "https://booksy.com/",
+  booksyUrl:
+    "https://booksy.com/en-us/instant-experiences/widget/776964?instant_experiences_enabled=true&ig_ix=true&utm_source=ig&utm_medium=social&utm_content=link_in_bio",
   // Replace with the real contact details.
   phoneDisplay: "(949) 000-0000",
   phoneHref: "tel:+19490000000",
